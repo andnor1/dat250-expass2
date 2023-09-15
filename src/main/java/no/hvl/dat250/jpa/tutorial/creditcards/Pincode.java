@@ -1,6 +1,8 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 public class Pincode {
@@ -12,13 +14,11 @@ public class Pincode {
         return id;
     }
 
-    public String getCode() {
-        // TODO: implement method!
-        return null;
-    }
+    @Getter
+    @Setter
+    private String code;
 
-    public Integer getCount() {
-        // TODO: implement method!
-        return null;
-    }
+    @Getter
+    @Setter
+    private Integer count;
 }
